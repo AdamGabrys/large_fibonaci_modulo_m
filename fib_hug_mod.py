@@ -60,7 +60,7 @@ def check_if_sieve_and_fill(sieve, i, n):
 
 def insert_power_and_mod_based_period(pisano_periods_array, prime):
     insert_mod_based_period(pisano_periods_array, prime)
-    insert_power_based_period(pisano_periods_array, prime)
+    insert_power_prime_period(pisano_periods_array, prime)
 
 
 def insert_mod_based_period(pisano_periods_array, prime):
@@ -80,10 +80,6 @@ def insert_period_which_prime_mod_10_eq_9_or_1(pisano_periods_array, prime):
         pisano_periods_array.insert(prime-1, prime-1)
         pisano_periods_array.pop(prime)
     return pisano_periods_array
-
-
-def insert_power_based_period(pisano_periods_array, prime):
-    insert_power_prime_period(pisano_periods_array, prime)
 
 
 def insert_power_prime_period(pisano_periods_array, prime):
