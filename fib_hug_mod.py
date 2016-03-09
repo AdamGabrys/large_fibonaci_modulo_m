@@ -24,15 +24,11 @@ def get_pisano_periods_array(m):
     pisano_periods_array = initialize_pisano_periods_array(m)
     fill_pisano_periods_array(pisano_periods_array)
     return pisano_periods_array
-    
+
+
 def initialize_pisano_periods_array(m):
     pisano_periods_array = [0]*(m+1)
-    pisano_periods_array.pop(0)
-    pisano_periods_array.insert(0, 1)
-    pisano_periods_array.pop(1)
-    pisano_periods_array.insert(1, 3)
-    pisano_periods_array.pop(2)
-    pisano_periods_array.insert(2, 8)
+    pisano_periods_array[0:2] = [1, 3, 8]
     return pisano_periods_array
 
 
