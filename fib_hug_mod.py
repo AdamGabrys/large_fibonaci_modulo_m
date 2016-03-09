@@ -1,7 +1,6 @@
 # Uses python3
 # Compute modulo m of n-th Fibonacci number
-# Uses Pisano periods to find equivalent Fibonacci number
-# to certain modulo
+# Uses Pisano periods to find equivalent Fibonacci numberto certain modulo
 # time and memory efficient
 # compute 10^5 modulo of 10^16 Fibonacci number in less than 1s
 
