@@ -15,14 +15,18 @@ def main():
 
 
 def get_n_fibonacci_number_mod_m(n, m):
-    pisano_periods_array = [0]*(m+1)
-    initialize_pisano_periods_array(pisano_periods_array)
-    fill_pisano_periods_array(pisano_periods_array)
+    pisano_periods_array = get_pisano_periods_array(m)
     equivalent_n = get_equivalent_n(n, m, pisano_periods_array)
     return get_n_fibonacci_number(equivalent_n) % m
 
 
-def initialize_pisano_periods_array(pisano_periods_array):
+def get_pisano_periods_array(m):
+    pisano_periods_array = initialize_pisano_periods_array(m)
+    fill_pisano_periods_array(pisano_periods_array)
+    
+    
+def initialize_pisano_periods_array(m):
+    pisano_periods_array = [0]*(m+1)
     pisano_periods_array.pop(0)
     pisano_periods_array.insert(0, 1)
     pisano_periods_array.pop(1)
