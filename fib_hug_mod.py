@@ -23,7 +23,7 @@ def get_n_fibonacci_number_mod_m(n, m):
 def get_pisano_periods_array(m):
     pisano_periods_array = initialize_pisano_periods_array(m)
     fill_pisano_periods_array(pisano_periods_array)
-    
+    return pisano_periods_array
     
 def initialize_pisano_periods_array(m):
     pisano_periods_array = [0]*(m+1)
